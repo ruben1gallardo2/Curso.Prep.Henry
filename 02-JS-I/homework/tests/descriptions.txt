@@ -1,0 +1,17 @@
+*variables: se describen como una caja contenedora de cosas (valores), que podremos
+usar luego como queramos
+
+*Strings: es un tipo de variable, la cual guarda unicamente texto, letras y caracteres dentro de comillas
+
+*funciones: son herramientas que creamos para que ejecuten una accion en nuestro codigo. 
+Ayudan a simplificar lo que hacemos y son reutilizables. Son cajas de herramietas que pueden contener 
+cosas mas complejas
+
+*funciones(argumentos `return`): los argumentos son valores que nuestra funcion va a recibir del exterior parafuncionar 
+en su totalidad. Es una palanca que ayudara a nuestra caja y lo que hay adentro a funcionar. El return seria el resultado de las acciones 
+que nuestra caja de herramientas nos ha dado
+
+*Declaraciones `if`: es un condicional que no nos dejara tomar una accion si no se cumple lo que Declaraciones
+
+*Boolean `true, false`: Son dos tipos de valores que son asignables a nuestras variables. Con muchas funcionalidades,
+como hacer de switches, revisar status de funciones (exitosa o fracasado), entre otras cosas
