@@ -1,0 +1,11 @@
+*For: es un ciclo que nos permite recorrer muchos valores en orden ascendete o descendente
+con el fin de comparar un valor con otro
+
+*&&: forma parte de un complemento para generar una condicion, es decir cuando queremos condicionar
+que algo sea igual a dos o a mas cosas al mismo tiempo
+
+*||: sirve para cuaando queremos condicionar que una variable sea igual a algo o a otra cosa,
+si alguno de los dos casos se cumplen la condicion se cumplira
+
+*!: sirve para generar una negacion a una condicion, cuando usamos el "!" es para decir que 
+si se cumple que esa condicion sea falsa o "negada", se cumple dicha condicion
