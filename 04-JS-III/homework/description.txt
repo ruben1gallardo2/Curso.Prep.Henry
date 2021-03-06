@@ -1,0 +1,2 @@
+array: es un coleccionador de valores, que puede contener todo tipo de valores
+bien sean palabras(string) o numeros, incluso una mezcla de ambos
