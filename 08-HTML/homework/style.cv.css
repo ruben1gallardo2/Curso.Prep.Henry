@@ -1,0 +1,62 @@
+header {
+    display: block;
+    background-color: rgb(23, 134, 172);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+header h1 {
+    margin: 0px;
+}
+header p {
+    margin: 0px;
+    padding-bottom: 5px;
+}
+#desc {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: teal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#edu {
+    width: 100%;
+}
+#edu h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+#edu h4 {
+    text-align: center;
+    text-decoration: underline;
+}
+#box {
+    float: left;
+    width: 49%;
+    height: 150px;
+    border: 1px solid black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(27, 126, 156);
+    color: white;
+}
+#box h3 {
+    font-size: 20px;
+    margin: 0px;
+    padding-top: 10px;
+    text-decoration: underline;
+}
+#box p a {
+    text-decoration: none;
+    color: rgb(223, 6, 6);
+}
+#skills ul li {
+    float: left;
+    margin-right: 25px;
+    list-style: none;
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+
