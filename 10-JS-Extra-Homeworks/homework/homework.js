@@ -10,8 +10,15 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
-  const arr = JSON.parse(objeto)
-    return arr
+  const t = []
+  const arr = Object.keys(objeto)
+  for(const a of arr){
+    const y = []
+    y[0] = a
+    y[1] = objeto[a]
+    t.push(y)
+  }
+  return t
 }
 
 
@@ -20,6 +27,15 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+  let arreglos = Array.from(string)
+  const obj = {}
+  while(arreglos.length > 0){
+    const st = arreglos[0]
+    const arr = arreglos.filter( x => x === st)
+    arreglos = arreglos.filter(x => x !== st)
+    obj[st] = arr.length
+  }
+  return obj
 }
 
 
@@ -28,6 +44,14 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+  let arreglo = Array.from(s)
+  // for(const arr of arreglo){
+  //   if(arr === arr.toLowerCase()){
+  //     t.push(g)
+  //   }
+  const arr = arreglo.filter( x => x === x.toLowerCase() )
+  const Arr = arreglo.filter( x => x === x.toUpperCase() )
+  return Arr.concat(arr).join("")
 }
 
 
@@ -37,6 +61,13 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
+  let arrs = str.split(" ")
+  const t = []
+  for(let arr of arrs){
+    arr = Array.from(arr).reverse().join("")
+    t.push(arr)
+  }
+  return t.join(" ")
 } 
 
 
@@ -45,7 +76,26 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+  
+  
+  let arrs = Array.from(String(numero), Number)
+  const reversed = arrs.reverse()
+  let t = []
+
+  for(const arr of reversed){
+    t.push(arr)
+  }
+  t.join("")
+  if(Number(t) === numero){
+    return "Es capicua"
+  }else{
+    return "No es capicua"
+  }
+  
 }
+  
+  
+
 
 
 function deleteAbc(cadena){
