@@ -116,7 +116,7 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Escribe tu código aquí  
   const arrs = arreglo1.filter(x => arreglo2.indexOf(x) != -1 )
   return arrs
-  //hh
+  
 }
 
 
