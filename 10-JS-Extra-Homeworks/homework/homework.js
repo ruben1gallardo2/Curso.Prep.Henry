@@ -78,30 +78,24 @@ function capicua(numero){
   //Escribe tu código aquí
   
   
-  let arrs = Array.from(String(numero), Number)
-  const reversed = arrs.reverse()
-  let t = []
-
-  for(const arr of reversed){
-    t.push(arr)
-  }
-  t.join("")
-  if(Number(t) === numero){
+  const arrs = Array.from(String(numero), Number).reverse().join("")
+  const arr = Array.from(String(numero), Number).join("")
+  if(arrs == arr){
     return "Es capicua"
   }else{
     return "No es capicua"
   }
-  
 }
   
   
-
-
 
 function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
+  const arrs = Array.from(cadena)
+  const a = arrs.filter((x) => {if (x != "a" && x != "b" && x != "c") return x})
+  return a.join("")
 }
 
 
@@ -109,6 +103,8 @@ function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
+  return t = arr.sort((a, b) => a.length - b.length)
+  
 }
 
 
@@ -118,6 +114,8 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
+  const arrs = arreglo1.filter(x => arreglo2.indexOf(x) != -1 )
+  return arrs
 }
 
 
